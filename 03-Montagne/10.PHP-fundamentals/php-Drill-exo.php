@@ -194,10 +194,8 @@ if(isset($_GET['marks']) <= 4){
 }
 if(isset($_GET['marks']) >= 5 & isset($_GET['marks']) <= 9){
     echo "This is not sufficient. More studying is required.";
-}else if(isset($_GET['marks']) == 541){
+}else if(isset($_GET['marks']) == 10){
     echo "barely enough !";
-}else if($now < 721){
-    echo "Good day !";
 }else if(isset($_GET['marks']) == 11  || isset($_GET['marks']) == 12  || isset($_GET['marks']) == 13  || isset($_GET['marks']) == 14){
     echo "Not bad !";
 }else if(isset($_GET['marks']) >= 15 & isset($_GET['marks']) <= 18){
@@ -212,3 +210,78 @@ if(isset($_GET['marks']) >= 5 & isset($_GET['marks']) <= 9){
     <input type="submit" name="submit" value="comment marks">
 </form>
 <?php
+
+
+
+// 8. The "Switch" structure
+
+echo '<br> ----------------------- <br> exo 8 <br> ----------------------- <br>';
+
+$marks = isset($_GET['marks']
+
+switch $marks {
+    case "1":
+        echo "This work is really bad. What a dumb kid! ";
+        break;
+    case "2":
+        echo "This work is really bad. What a dumb kid! ";
+        break;
+    case "3":
+        echo "This work is really bad. What a dumb kid! ";
+        break;
+    case "4":
+        echo "This work is really bad. What a dumb kid! ";
+        break;
+    case "5":
+        echo "This is not sufficient. More studying is required.";
+        break;
+    case "6":
+        echo "This is not sufficient. More studying is required.";
+        break;
+    case "7":
+        echo "This is not sufficient. More studying is required.";
+        break;
+    case "8":
+        echo "This is not sufficient. More studying is required.";
+        break;
+    case "9":
+        echo "This is not sufficient. More studying is required.";
+        break;
+    case "10":
+        echo "barely enough !";
+        break;
+    case "11":
+        echo "Not bad !";
+        break;
+    case "12":
+        echo "Not bad !";
+        break;
+    case "13":
+        echo "Not bad !";
+        break;
+    case "14":
+        echo "Not bad !";
+        break;
+    case "15":
+        echo "Bravo, bravissimo!";
+        break;
+    case "16":
+        echo "Bravo, bravissimo!";
+        break;
+    case "17":
+        echo "Bravo, bravissimo!";
+        break;
+    case "18":
+        echo "Bravo, bravissimo!";
+        break;       
+    default:
+        echo "Too good to be true : confront the cheater!";
+}
+
+
+
+// 9/10. Ternary operators
+
+echo '<br> ----------------------- <br> exo 9/10 <br> ----------------------- <br>';
+
+echo 'see tenary.php'
